@@ -58,6 +58,34 @@ if number >= 1 :
 else:
   n8 = 0
 
-answer = str(n1) + str(n2) + str(n3) + str(n4) + str(n5) + str(n6) + str(n7) + str(n8)
+answer1 = str(n1) + str(n2) + str(n3) + str(n4) + str(n5) + str(n6) + str(n7) + str(n8)
 
-print(answer)
+print("二進位數字為" + answer1)
+
+hex1 = n1 * 8 + n2 * 4 + n3 * 2 + n4
+hex2 = n5 * 8 + n6 * 4 + n7 * 2 + n8
+if hex1 == 10:
+  hex1 = "A"
+if hex2 == 10:
+  hex2 = "A"
+if hex1 == 11:
+  hex1 = "B"
+if hex2 == 11:
+  hex2 = "B"
+if hex1 == 12:
+  hex1 = "C"
+if hex2 == 12:
+  hex2 = "C"
+if hex1 == 13:
+  hex1 = "D"
+if hex2 == 13:
+  hex2 = "D"
+if hex1 == 14:
+  hex1 = "E"
+if hex2 == 14:
+  hex2 = "E"
+if hex1 == 15:
+  hex1 = "F"
+if hex2 == 15:
+  hex2 = "F"
+print("十六進位數字為" + str(hex1) + str(hex2))
